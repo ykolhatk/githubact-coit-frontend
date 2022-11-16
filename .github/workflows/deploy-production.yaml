@@ -25,11 +25,11 @@ jobs:
 
       - name: Build the container Image
         run: | 
-          docker build coit-frontend -t coitlearning/coit-frontend:$GITHUB_REF -f coit-frontend/Dockerfile-multistage
+          docker build coit-frontend -t ykolhatk/coit-frontend:$GITHUB_REF -f coit-frontend/Dockerfile-multistage
 
       - name: Push the container Image
         run: | 
-          docker push coitlearning/coit-frontend:$GITHUB_REF
+          docker push ykolhatk/coit-frontend:$GITHUB_REF
 
       - uses: google-github-actions/setup-gcloud@94337306dda8180d967a56932ceb4ddcf01edae7
         with:
